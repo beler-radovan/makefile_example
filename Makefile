@@ -7,6 +7,8 @@ obj:=
 inc:=src/Makefile.inc
 include $(inc)
 
+all: $(output)
+
 $(output): $(obj)
 	$(cc) $(cflags) $^ $(libs) -o $@
 
@@ -14,6 +16,5 @@ $(output): $(obj)
 	$(cc) $(cflags) -c $< $(libs) -o $@
 
 .PHONY: clean
-
 clean:
 	rm -rf $(obj) $(output)

@@ -1,4 +1,4 @@
-dir:=src
+private dir:=src
 
 obj+=$(dir)/main.o \
      $(dir)/add.o

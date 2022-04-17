@@ -15,6 +15,6 @@ $(output): $(obj)
 %.o: %.c
 	$(cc) $(cflags) -c $< $(libs) -o $@
 
-.PHONY: clean
+.PHONY: build_dir clean
 clean:
 	rm -rf $(obj) $(output)
